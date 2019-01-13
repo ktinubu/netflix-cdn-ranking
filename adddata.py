@@ -24,6 +24,7 @@ def main(argv):
 	try:
 		file = open(file_path, 'rb')
 		data = pickle.load(file)
+		file.close()
 	except FileNotFoundError:
 		data = {}
 
@@ -54,6 +55,6 @@ def main(argv):
 	# write back data to disk
 	file = open(file_path, "wb")
 	pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
-
+	file.close()
 main(sys.argv[1:])
 
