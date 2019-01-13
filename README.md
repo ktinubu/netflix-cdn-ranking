@@ -12,7 +12,7 @@ netflix-cdn-ranking uses python3 and pip. To install requirements, run:\
 ## Instructions
 
 ### 1.Fork repo
-
+    git clone https://github.com/ktinubu/netflix-cdn-ranking.git
 ### 2.Set the following environment variables:
 
 `NFLIXACCOUNTS`: email and passwords\
