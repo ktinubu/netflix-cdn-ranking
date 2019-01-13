@@ -34,7 +34,7 @@ def main(argv):
 	total = len(accounts)
 	for account in accounts:
 		email, password = account.split(':')
-		print("getting data for account " + str(account_numer) + " of " + str(total)
+		print("getting data for account " + str(account_numer) + " of " + str(total))
 		
 
 		user_auth_data = {
