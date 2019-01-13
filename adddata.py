@@ -27,6 +27,7 @@ def main(argv):
 		file.close()
 	except FileNotFoundError:
 		data = {}
+		print("CUT!!!")
 
 	# retrieve cdn rankings
 	location = os.environ[NFLIXLOCATION]
