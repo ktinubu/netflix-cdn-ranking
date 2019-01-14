@@ -11,7 +11,7 @@ def main(argv):
 
 	file = open(data_file_name, 'rb')
 	data = pickle.load(file)
-	file.clos()
+	file.close()
 
 	file.close()
 	with open(csv_file_name, mode='w') as csv_file:
