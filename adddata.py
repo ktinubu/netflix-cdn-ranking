@@ -27,7 +27,6 @@ def main(argv):
 		file.close()
 	except FileNotFoundError:
 		data = {}
-		print("CUT!!!")
 
 	# retrieve cdn rankings
 	location = os.environ[NFLIXLOCATION]
@@ -36,7 +35,6 @@ def main(argv):
 	total = len(accounts)
 	for account in accounts:
 		email, password = account.split(':')
-		print(email)
 		print("getting data for account " + str(account_numer) + " of " + str(total))
 		
 
